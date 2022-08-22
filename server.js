@@ -2,7 +2,8 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 //adding a unique id generator for the notes//
-const uuid = require('./helpers/uuid');
+// const uuid = require('./helpers/uuid');
+const uuid = require('./Develop/helpers/uuid');
 
 const PORT = process.env.PORT || 3001;
 
@@ -98,4 +99,4 @@ app.get('*', (req, res) =>
 );
 
 app.listen(process.env.PORT || PORT, 
-	() => console.log("The server is running."));
+	() => console.log("The server is running at http://localhost:${PORT}."));

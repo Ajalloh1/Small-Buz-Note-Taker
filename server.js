@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 //adding a unique id generator for the notes//
 // const uuid = require('./helpers/uuid');
-const uuid = require('./Develop/helpers/uuid');
+const uuid = require('uuid');
 
 const PORT = process.env.PORT || 3001;
 

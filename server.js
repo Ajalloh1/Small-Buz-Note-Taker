@@ -1,8 +1,6 @@
 const express = require('express');
-// const path = require('path');
 const fs = require('fs');
 //adding a unique id generator for the notes//
-// const uuid = require('./helpers/uuid');
 const uuid = require('uuid');
 
 const apiRoutes = require('./routes/apiRoutes');

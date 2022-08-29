@@ -2,7 +2,7 @@ const router = require('express').Router();
 const dbNote = require('../db/db.json');
 
 // calling of api functions//
-app.get('/api/notes', (req, res) => {
+router.get('/api/notes', (req, res) => {
     fs.readFile(__dirname + "/db/db.json", 'utf8', function (error, data) {
         if (error) {
           return console.log(error)
@@ -12,7 +12,7 @@ app.get('/api/notes', (req, res) => {
     })
 });
 
-app.post('/api/notes', (req, res) => { 
+router.post('/api/notes', (req, res) => { 
     const { title, text } = req.body;
 
     fs.readFile(__dirname + "/db/db.json", 'utf-8', (err, data) => {
@@ -44,7 +44,7 @@ app.post('/api/notes', (req, res) => {
     });
 });
 
-app.delete("/api/notes/:id", function (req, res) {
+router.delete("/api/notes/:id", function (req, res) {
     
     const noteId = req.params.id
 
@@ -71,3 +71,4 @@ app.delete("/api/notes/:id", function (req, res) {
     });
 
 });
+module.exports = router;

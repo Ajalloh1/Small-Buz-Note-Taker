@@ -15,6 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
 app.use('/api', apiRoutes);
-app.use('/',htmlRoutes);
-app.listen(process.env.PORT || PORT, 
+app.use('/', htmlRoutes);
+app.listen(process.env.PORT || PORT,
 	() => console.log(`The server is running at http://localhost:${PORT}.`));

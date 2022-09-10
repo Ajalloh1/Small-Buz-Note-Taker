@@ -1,10 +1,12 @@
 # Small Buz Note Taker 
 
-![img1](./assets/js/img1.jpg)
+![img1](./assets/js/img1.png)
 
-![img1](./assets/js/img2.jpg)
+![img2](./assets/js/img2.png)
 
-![img1](./assets/js/img3.jpg)
+![img3](./assets/js/img3.png)
+
+![img4](./assets/js/img4.png)
 
 This is my note taker app. Please see below user story and acceptance criterias. App is fully deployed in heroku, please see link below.
 

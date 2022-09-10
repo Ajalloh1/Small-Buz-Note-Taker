@@ -7,6 +7,7 @@
 ![img3](./assets/js/img3.png)
 
 ![img4](./assets/js/img4.png)
+![img5](./assets/js/img5.png)
 
 This is my note taker app. Please see below user story and acceptance criterias. App is fully deployed in heroku, please see link below.
 
